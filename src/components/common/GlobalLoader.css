@@ -1,0 +1,44 @@
+.global-loader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.global-loader-content {
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-active);
+}
+
+.global-loader-icon {
+  animation: spin 1.5s linear infinite;
+  color: var(--gold-start);
+  filter: drop-shadow(var(--shadow-gold));
+}
+
+.global-loader-message {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold-start);
+  margin-bottom: var(--space-xs);
+}
+
+.global-loader-subtext {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,90 @@
+/* ProtectPdf specific styles */
+.protect-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.protect-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.protect-input-icon {
+  position: absolute;
+  left: 14px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.protect-input {
+  width: 100%;
+  padding: 12px 48px 12px 42px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.protect-input:focus {
+  outline: none;
+  border-color: var(--border-active);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.protect-input::placeholder {
+  color: var(--text-muted);
+}
+
+.protect-eye {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-fast);
+}
+
+.protect-eye:hover {
+  color: var(--text-primary);
+}
+
+/* Password strength */
+.password-strength {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.password-strength__bars {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+}
+
+.password-strength__bar {
+  height: 4px;
+  border-radius: var(--radius-full);
+  flex: 1;
+  transition: background var(--transition-base);
+}
+
+.password-strength span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}

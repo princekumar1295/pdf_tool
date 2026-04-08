@@ -1,0 +1,120 @@
+/* SplitPdf specific styles */
+.split-ranges {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.split-range-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast);
+}
+
+.split-range-row:hover {
+  border-color: var(--border-subtle);
+}
+
+.split-range-num {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.15);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--purple-light);
+}
+
+.split-range-fields {
+  display: flex;
+  gap: var(--space-md);
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.split-range-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.split-range-fields label.split-range-name {
+  flex: 1;
+  min-width: 120px;
+}
+
+.split-range-fields input {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.875rem;
+  padding: 6px 10px;
+  width: 80px;
+  transition: border-color var(--transition-fast);
+}
+
+.split-range-fields label.split-range-name input {
+  width: 100%;
+}
+
+.split-range-fields input:focus {
+  outline: none;
+  border-color: var(--border-active);
+}
+
+.split-range-remove {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: rgba(244, 63, 94, 0.1);
+  border-radius: var(--radius-sm);
+  color: #f87171;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.split-range-remove:hover {
+  background: rgba(244, 63, 94, 0.25);
+}
+
+/* Results list */
+.split-results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin: var(--space-md) 0;
+}
+
+.split-result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}

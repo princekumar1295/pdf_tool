@@ -1,0 +1,103 @@
+.dragdrop {
+  border: 2px dashed var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl) var(--space-xl);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  background: var(--gradient-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.dragdrop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(124, 58, 237, 0.06) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.dragdrop:hover::before,
+.dragdrop--active::before {
+  opacity: 1;
+}
+
+.dragdrop:hover {
+  border-color: var(--border-active);
+  background: rgba(124, 58, 237, 0.06);
+}
+
+.dragdrop--active {
+  border-color: var(--purple-mid);
+  background: rgba(124, 58, 237, 0.1);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1), var(--shadow-purple);
+  transform: scale(1.01);
+}
+
+.dragdrop__input {
+  display: none;
+}
+
+.dragdrop__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  pointer-events: none;
+}
+
+.dragdrop__icon-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--purple-mid);
+  margin-bottom: var(--space-sm);
+  transition: all var(--transition-base);
+}
+
+.dragdrop:hover .dragdrop__icon-wrap {
+  background: rgba(124, 58, 237, 0.2);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-3px);
+}
+
+.dragdrop__icon-wrap.bouncing {
+  animation: float 0.6s ease infinite;
+  background: rgba(124, 58, 237, 0.25);
+  box-shadow: var(--shadow-purple);
+}
+
+.dragdrop__label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.dragdrop__sub {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.dragdrop__hint {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+  background: rgba(255,255,255,0.04);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-card);
+}
+
+.dragdrop__dot {
+  opacity: 0.4;
+}

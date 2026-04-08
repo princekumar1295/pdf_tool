@@ -1,0 +1,72 @@
+:root {
+  /* Heritage Colors */
+  --bg-primary: #120101; /* Deepest Royal Maroon */
+  --bg-secondary: #1a0202; /* Rich Dark Mahogany */
+  --bg-card: #240303; /* Polished Rosewood */
+  --bg-glass: rgba(255, 253, 208, 0.03);
+  --bg-glass-hover: rgba(212, 175, 55, 0.07);
+
+  /* Indian Heritage Palette */
+  --gold-start: #d4af37;
+  --gold-mid: #e1ad01;
+  --gold-end: #b8860b;
+  --gold-light: #f9e29c;
+  --gold-glow: rgba(212, 175, 55, 0.25);
+  --gold-foil: linear-gradient(90deg, rgba(212,175,55,0) 0%, rgba(212,175,55,0.4) 50%, rgba(212,175,55,0) 100%);
+
+  /* Accents */
+  --accent-saffron: #f9a602;
+  --accent-rose: #900d0d;
+  --accent-teal: #008080;
+  --accent-green: #2d5a27;
+
+  /* Text - Parchment/Champagne */
+  --text-primary: #fdf5e6;
+  --text-secondary: #e5d3b3;
+  --text-muted: #8b7d6b;
+  --text-link: #d4af37;
+
+  /* Borders */
+  --border-subtle: rgba(212, 175, 55, 0.12);
+  --border-card: rgba(212, 175, 55, 0.15);
+  --border-active: rgba(212, 175, 55, 0.6);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #d4af37 0%, #e1ad01 50%, #b8860b 100%);
+  --gradient-hero: linear-gradient(135deg, #120101 0%, #2a0202 50%, #120101 100%);
+  --gradient-card: linear-gradient(145deg, rgba(212, 175, 55, 0.08) 0%, rgba(144, 13, 13, 0.04) 100%);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.7);
+  --shadow-gold: 0 0 30px rgba(212, 175, 55, 0.2), 0 0 60px rgba(212, 175, 55, 0.05);
+  --shadow-glow: 0 0 20px rgba(212, 175, 55, 0.3);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --navbar-height: 64px;
+  --content-max-width: 900px;
+}

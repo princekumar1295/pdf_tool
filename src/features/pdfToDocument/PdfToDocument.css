@@ -1,0 +1,46 @@
+/* PdfToDocument specific styles */
+.pdf-document-preview {
+  margin-top: var(--space-lg);
+}
+
+.pdf-document-preview__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.pdf-document-preview__hint {
+  margin-bottom: var(--space-md);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.pdf-document-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-md);
+}
+
+.pdf-document-page {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+  background: var(--bg-glass);
+  box-shadow: var(--shadow-sm);
+}
+
+.pdf-document-page img {
+  width: 100%;
+  display: block;
+  background: white;
+}
+
+.pdf-document-page__footer {
+  padding: 8px 10px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-card);
+}
